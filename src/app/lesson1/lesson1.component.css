@@ -1,0 +1,84 @@
+*{
+  font-family:Verdana,Tahoma, sans-serif
+}
+#btn-edit{
+  background-color: rgb(0, 217, 255);
+  color: white;
+}
+#btn-add{
+background-color: rgb(40, 156, 40);
+color: white;
+}
+.main{
+  display: flex;
+  justify-content: flex-start;
+}
+.first{
+ margin-left: 100px;
+ margin-top: 40px;
+}
+.second{
+ margin-top: 40px;
+ 
+}
+#table{
+ width: 600px;
+ margin-left: 50px;  
+ border-collapse: collapse;
+}
+
+.inpt{
+ width: 600px;
+ height: 30px;
+ margin: 15px 0;
+ padding: 7px;
+ font-size: 16px;
+}
+
+.btn{
+border: none;
+border-radius: 3px;
+width: 620px;
+height: 40px;
+font-size: 17px;
+} 
+
+
+  .btnTable{
+width: 70px;
+height: 40px;
+background-color: rgb(233, 184, 51);
+color: black;
+border: none;
+border-radius: 3px;
+  }
+  .btnTable2{
+   width: 90px;
+   height: 40px;
+   background-color: orangered;
+   color: white;
+   font-size: 16px;
+   border: none;
+   border-radius: 3px;
+  }
+  .btnTable2:hover{
+   background-color: rgb(228, 81, 28);
+  }
+  .btnTable:hover{
+   background-color: rgb(219, 178, 63);
+  }
+th{
+ font-size: 15px;
+height: 70px;
+
+}
+td{
+ font-size: 15px;
+ height: 70px;
+}
+tr{
+  border-top: 1px solid grey;
+}
+.first-tr{
+ border-bottom: 1px solid grey;
+}

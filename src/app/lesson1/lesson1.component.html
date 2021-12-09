@@ -1,0 +1,41 @@
+<div class="main">
+  <div class="first">
+    <div id="form">
+      <div id="login-inpt">
+        <div id="login-text">Login</div>
+        <input type="text" id="login" [(ngModel)]="newLogin"  class="inpt" placeholder="Enter login">
+      </div>
+      <div id="password-inpt">
+        <div id="password-text">Password</div>
+        <input type="password" id="password" [(ngModel)]="newPassword" class="inpt" placeholder="Enter password">
+      </div>
+      <div id="email-inpt">
+        <div id="email-text">Email address</div>
+        <input type="text" id="email" [(ngModel)]="newEmail"  class="inpt" placeholder="Enter email">
+      </div>
+      <input type="button" id="btn-add" class="btn" (click)="addUser()" *ngIf = "added" value="Add user" [disabled] = '!newLogin' >
+      <input type="button" id="btn-edit" class="btn" (click)="saveEditUser()" *ngIf = "!added"  value="Save edit user" [disabled] = '!newLogin'>
+    </div>
+  </div>
+  <div class="second">
+    <table id="table">
+      <tr class="first-tr">
+        <th>#</th>
+        <th>Login</th>
+        <th>Password</th>
+        <th>Email</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+      <tr class="newTr" *ngFor="let item of arr; index as i">
+        <th>{{i + 1}}</th>
+<th>{{item.login}}</th>
+<th>{{item.password}}</th>
+<th>{{item.email}}</th>
+<th><button value="Edit" class="btnTable" id="btn-edit2" (click) = "editUser(i)" >Edit</button></th>
+<th><button value="Delete" class="btnTable2" id="btn-delete" (click) = "deleteUser(i)" [disabled] = '!added'>Delete</button></th>
+
+      </tr>
+    </table>
+  </div>
+</div>
